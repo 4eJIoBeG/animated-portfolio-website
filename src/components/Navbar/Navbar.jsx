@@ -3,6 +3,8 @@ import "./navbar.scss";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Navbar = () => {
+  const socials = ["facebook", "instagram", "youtube", "dribbble"];
+
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -41,18 +43,11 @@ const Navbar = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.a href="#" variants={item}>
-            <img src="/facebook.png" alt="facebook" />
-          </motion.a>
-          <motion.a href="#" variants={item}>
-            <img src="/instagram.png" alt="instagram" />
-          </motion.a>
-          <motion.a href="#" variants={item}>
-            <img src="/youtube.png" alt="youtube" />
-          </motion.a>
-          <motion.a href="#" variants={item}>
-            <img src="/dribbble.png" alt="dribbble" />
-          </motion.a>
+          {socials.map((social) => (
+            <motion.a key={social} href="#" variants={item}>
+              <img src={`/${social}.png`} alt={social} />
+            </motion.a>
+          ))}
         </motion.div>
       </div>
     </div>
