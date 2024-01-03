@@ -7,6 +7,7 @@
   position: relative;
 
   .wrapper {
+    z-index: 1;
     max-width: 1366px;
     height: 100%;
     margin: auto;
@@ -63,8 +64,8 @@
   }
   .slidingTextContainer {
     position: absolute;
-    font-size: 50vh;
-    bottom: -120px;
+    font-size: 25vh;
+    bottom: -80px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;
