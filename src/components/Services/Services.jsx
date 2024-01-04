@@ -40,22 +40,18 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="people" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <b>Unique</b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business
+            <b>For Your</b> Business
           </h1>
           <button>WHAT WE DO?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
@@ -64,10 +60,7 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
@@ -76,10 +69,7 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
@@ -88,10 +78,7 @@ const Services = () => {
           </p>
           <button>Go</button>
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2>Branding</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero,
