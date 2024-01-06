@@ -5,11 +5,11 @@ import emailjs from "@emailjs/browser";
 
 const variants = {
   initial: {
-    y: 500,
+    x: -300,
     opacity: 0,
   },
   animate: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       duration: 0.5,
@@ -24,7 +24,7 @@ const Contact = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  const isInView = useInView(ref, { margin: "-100px" });
+  const isInView = useInView(ref, { margin: "-10px" });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -76,7 +76,7 @@ const Contact = () => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 2, duration: 1 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
